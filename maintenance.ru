@@ -13,9 +13,15 @@ require 'rack'
 # https://github.com/rack/rack/blob/master/lib/rack/builder.rb
 
 STARTTIME = Time.now
+
+# 503 Service Unavailable
+# http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+
+STATUSCODE = 503
+
 message = <<-HTML
             <h1>This Application Is Undergoing Maintenance</h1>
             Maintenance started @ #{STARTTIME}
           HTML
 
-run lambda { |env| [ 200, { "Content-Type" => "text/html" }, [ message ] ] }
+run lambda { |env| [ STATUSCODE, { "Content-Type" => "text/html" }, [ message ] ] }
