@@ -5,8 +5,8 @@
 #   % rackup maintenance.ru
 #   % unicorn maintenance.ru
 # daemons' options are available
-#  % rackup -D -P tmp/pids/maintenance -p 9999 maintenance.ru
-#  % unicorn -D -P tmp/pids/maintenance -p 9999 maintenance.ru
+#   % rackup -D -P tmp/pids/maintenance -p 9999 maintenance.ru
+#   % unicorn -D -P tmp/pids/maintenance -p 9999 maintenance.ru
 
 require 'rack'
 
