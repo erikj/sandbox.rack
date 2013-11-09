@@ -6,3 +6,6 @@ Sandbox for trying out rack.
 - [rack](https://github.com/rack/rack)
 - [rack-contrib](https://github.com/rack/rack-contrib)
 
+## License
+
+[MIT LICENSE](https://github.com/erikj/sandbox.rack/blob/master/LICENSE)
